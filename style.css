@@ -1,7 +1,68 @@
-h1 {
-  text-align: 'center';
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  text-align: 'center';
+  text-align: center;
+  display: inline;
+  vertical-align: top;
+}
+
+.aboutme,
+.content {
+  float: left;
+  height: 100vh;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.aboutme {
+  width: 30%;
+}
+
+.aboutme h1 {
+  font-size: 35px;
+}
+
+.aboutme img {
+  margin-top: 10px;
+}
+
+.socials {
+  display: inline-block;
+}
+
+.socials img {
+  clear: left;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.content {
+  width: 70%;
+}
+
+.content div {
+  position: relative;
+  top: 10px;
+  width: 50%;
+  display: flex;
+}
+
+.content div button {
+  margin: 0 10px;
+}
+
+button {
+  font-size: 16px;
+  padding: 4px;
+  background-color: hsl(0, 0%, 80%);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 65%);
 }
