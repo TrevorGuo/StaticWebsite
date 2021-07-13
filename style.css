@@ -1,13 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  background: hsl(0, 0%, 92%);
 }
 
 body {
   text-align: center;
   display: inline;
   vertical-align: top;
+  color: #000411;
 }
 
 .aboutme,
@@ -21,11 +21,12 @@ body {
 .aboutme {
   width: 30%;
   min-width: 320px;
+  background-color: #e1efe6;
+  border-right: 2px solid black;
 }
 
 .aboutme h1 {
   font-size: 35px;
-  color: hsl(0, 0%, 15%);
 }
 
 .aboutme img {
@@ -50,13 +51,24 @@ body {
 
 .content {
   width: 70%;
+  justify-content: center;
+  background: #33658a;
 }
 
 .content div {
-  position: relative;
+  /* position: relative;
   top: 10px;
   width: 50%;
-  display: flex;
+  display: flex; */
+  top: 10px;
+}
+
+.content .card {
+  background-color: hsl(0, 0%, 90%);
+  margin: 30px auto;
+  height: 75vh;
+  width: 30vw;
+  border-radius: 15px;
 }
 
 .content div button {
