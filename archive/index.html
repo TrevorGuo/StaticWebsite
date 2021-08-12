@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trevor Guo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel='shortcut icon' type='image/png' href='./images/favicon.png'>
+    <script src=scripts.js></script>
+</head>
+<body>
+    <section class='aboutme'>
+        <h1>Trevor Guo</h1>
+        <img src="./images/portrait.jpg" alt="Me and my cards" width=300 height=450>
+        <div class='socials'>
+            <a href='https://github.com/TrevorGuo' target='_blank' title="My GitHub">
+                <img src='./images/github.png' alt='My GitHub'>
+            </a>
+            <a href='https://www.linkedin.com/in/trevor-guo-63387719a/' target='_blank' title="My LinkedIn">
+                <img src='./images/linkedin.png' alt='My LinkedIn'>
+            </a>
+            <a href='https://www.instagram.com/tree.guo/?hl=en' target='_blank' title="My Instagram">
+                <img src='./images/instagram.png' alt='My Instagram'>
+            </a>
+            <a href='https://discord.com/users/127611267388014592' target='_blank' title="My Discord">
+                <img src='./images/discord.png' alt='My Discord'>
+            </a>
+        </div>
+    </section>
+    <section class='content'>
+        <div>
+            <button type="button" onclick="setPastProjects()">Past Projects</button>
+            <button type="button" onclick="setCurrentProjects()">Current Projects</button>
+            <button type="button" onclick="setHobbies()">Hobbies</button>
+        </div>
+        <div class='card'></div>
+        <script language="JavaScript">
+            let card = document.querySelector('.card');
+            console.log(card.textContent);
+            // document.body.addEventListener('change', getCard());
+        </script>
+    </section>
+    <footer>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+</body>
+</html>
