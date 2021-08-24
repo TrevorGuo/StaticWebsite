@@ -7,13 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
-    <script src=scripts.js></script>
     <script src='./functions/socialMedia.js'></script>
+    <script src='./functions/card.js'></script>
 </head>
 <body>
     <section class='aboutme'>
         <h1>Trevor Guo</h1>
         <img src="./images/portrait.jpg" alt="Me and my cards" width=80%>
+        <p>
+            Hi! I'm a second year CS student at UCLA. Find out more about
+            me by looking through the decks on the right!
+        </p>
         <div id='socials'>
         </div>
         <script>
@@ -26,12 +30,18 @@
             <button type="button" onclick="setCurrentProjects()">Current Projects</button>
             <button type="button" onclick="setHobbies()">Hobbies</button>
         </div>
-        <div class='card'></div>
-        <script language="JavaScript">
-            let card = document.querySelector('.card');
-            console.log(card.textContent);
-            // document.body.addEventListener('change', getCard());
-        </script>
+        <section id='cardContainer'>
+            <button type="button" onclick="previousCard()">
+                left
+            </button>
+            <div id='card'></div>
+            <button type="button" onclick="nextCard()">
+                right
+            </button>
+            <script language="JavaScript">
+                setCurrentProjects();
+            </script>
+        </section>
     </section>
     <footer>
         <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

@@ -4,8 +4,8 @@ currentProjects.push('BruinLabs');
 var pastProjects = new Array();
 pastProjects.push('LeetCode');
 
-var hobbies = new Array();
-hobbies.push('Volleyball');
+// var hobbies = new Array();
+// hobbies.push('Volleyball');
 
 let index = 0;
 var currentArray = currentProjects;
@@ -18,11 +18,6 @@ const setCurrentProjects = () => {
 const setPastProjects = () => {
   index = 0;
   currentArray = pastProjects;
-};
-
-const setHobbies = () => {
-  index = 0;
-  currentArray = hobbies;
 };
 
 const getCard = () => {

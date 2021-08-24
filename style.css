@@ -21,7 +21,6 @@ body {
 
 .aboutme {
   width: 30%;
-  min-width: 320px;
   background-color: #e1efe6;
   border-right: 2px solid black;
   display: flex;
@@ -35,11 +34,15 @@ body {
 }
 
 .aboutme img {
-  margin-top: 10px;
+  margin-top: 1vh;
+}
+
+p {
+  margin-top: 1vh;
 }
 
 #socials {
-  margin-top: 10px;
+  margin-top: 1vh;
   display: inline-flex;
 }
 
@@ -69,12 +72,17 @@ body {
   top: 10px;
 }
 
-.content .card {
+#card {
   background-color: hsl(0, 0%, 90%);
   margin: 30px auto;
   height: 75vh;
   width: 30vw;
   border-radius: 15px;
+}
+
+#cardContainer {
+  justify-content: center;
+  display: inline-flex;
 }
 
 .content div button {
