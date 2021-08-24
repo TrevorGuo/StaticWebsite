@@ -5,7 +5,7 @@ var pastProjects = new Array();
 pastProjects.push('LeetCode');
 
 var hobbies = new Array();
-hobbies.push('Genshin Impact');
+hobbies.push('Volleyball');
 
 let index = 0;
 var currentArray = currentProjects;
