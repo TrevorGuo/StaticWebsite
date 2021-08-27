@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Trevor Guo</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -10,16 +11,18 @@
     <script src='./functions/socialMedia.js'></script>
     <script src='./functions/card.js'></script>
 </head>
+
 <body>
     <section class='aboutme'>
         <h1>Trevor Guo</h1>
-        <img src="./images/portrait.jpg" alt="Me and my cards" width=80%>
+        <div id='portraitContainer'>
+            <img src="./images/portrait.jpg" alt="Me and my cards">
+        </div>
         <p>
             Hi! I'm a second year CS student at UCLA. Find out more about
             me by looking through the decks on the right!
         </p>
-        <div id='socials'>
-        </div>
+        <div id='socials'></div>
         <script>
             setSocials();
         </script>
@@ -31,20 +34,14 @@
             <button type="button" onclick="setHobbies()">Hobbies</button>
         </div>
         <section id='cardContainer'>
-            <button type="button" onclick="previousCard()">
-                left
-            </button>
+            <img src='./images/left-arrow.png' onclick="previousCard()">
             <div id='card'></div>
-            <button type="button" onclick="nextCard()">
-                right
-            </button>
+            <img src='./images/right-arrow.png' onclick="nextCard()">
             <script language="JavaScript">
                 setCurrentProjects();
             </script>
         </section>
     </section>
-    <footer>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-    </footer>
 </body>
+
 </html>
