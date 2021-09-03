@@ -26,7 +26,7 @@ function setSocials() {
 
   const tag = document.createElement('div');
   tag.innerHTML = 'Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect" target="_blank">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a>'
-  document.getElementById('socials').appendChild(tag);
+  document.getElementById('socialsContainer').appendChild(tag);
 }
 
 function createIcon(social) {
