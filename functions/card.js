@@ -3,9 +3,30 @@ let index = 0;
 
 const currentProjects = [
   {
-    name: 'This website',
+    name: 'ACM TeachLA Learning Lab',
     image: '',
-    description: "My portfolio site so you can find out more about me and what I've done!",
+    description:
+      "Creating an online learning tool for those interested in\
+    advancing their computer science skills. I'm a developer for the AI \
+    and machine learning learning lab, and working closely with the ACM AI \
+    group to effectively implement their curriculum",
+  },
+  {
+    name: '', //School
+    image: './images/ucla.png',
+    description:
+      "I'm pretty swamped with school so here are the classes I'm taking this quarter: <br><br>\
+      CS M51A: Logic Design of Digital Systems <br>\
+      Really fun class! Designing things such as digital clocks and vending machines\
+      <br><br>\
+      CS 180: Introduction to Algorithms and Complexity<br>\
+      I really like learning algorithms, so this class is something I look forward\
+      to every week.\
+      <br><br>\
+      Math 115A: Linear Algebra<br>\
+      Proof based linear algebra is very painful.\
+      <br><br>\
+      Physics 1C: Electromagnetism, Optics, and Relativity",
   },
 ];
 
@@ -13,7 +34,8 @@ const pastProjects = [
   {
     name: 'Budgie',
     image: './images/ShakerAppLogo.svg',
-    description: 'An IoT music education product that helps music students improve their rhythm. <br><br> \
+    description:
+      'An IoT music education product that helps music students improve their rhythm. <br><br> \
     A physical shaker device connects to a mobile app over bluetooth. The app will then display a rhythm for the musician to play. \
     The musician will then receive feedback on which notes they played early, late, or even missed. <br><br> \
     This product was submitted to BruinLabs, an entrepreneurship program at UCLA, where my team and I earned honorable mention. <br><br> \
@@ -25,13 +47,21 @@ const pastProjects = [
 const hobbies = [
   {
     name: 'Volleyball',
-    image: '',
-    description: '',
+    image: './images/volleyball.png',
+    description:
+      "I started playing volleyball during the pandemic, and I fell in love with the sport\
+      as soon as I picked up a ball. The thing I enjoy most about volleyball is the teamwork required\
+      to get the ball back over the net. My favorite games are one's with long rallies where neither team\
+      will let the ball drop.",
   },
   {
     name: 'Magic',
-    image: '',
-    description: '',
+    image: './images/magic.png',
+    description:
+      'I began performing magic in 6th grade after watching Now You See Me.\
+    I loved bringing amazement to the lives of those around me, and seeing jaws\
+    drop when I performed brought me a lot of joy. In high school, I created a magic\
+    club so that others could also enjoy magic like I did.',
   },
 ];
 
@@ -89,5 +119,4 @@ function setCard() {
   description.innerHTML = currentArray[index].description;
   description.setAttribute('id', 'cardDescription');
   card.append(description);
-
 }

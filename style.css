@@ -7,7 +7,7 @@ body {
   text-align: center;
   display: flex;
   vertical-align: top;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   color: #000411;
 }
 
@@ -61,10 +61,8 @@ body {
   flex: 7;
   justify-content: center;
   background: #33658a;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
 }
-
-
 
 #cardContainer {
   justify-content: center;
@@ -85,7 +83,6 @@ body {
 
 #cardContainer img {
   width: 5vw;
-  height: 5vw;
   margin: 0.5vw;
 }
 
