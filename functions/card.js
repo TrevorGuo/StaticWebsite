@@ -36,11 +36,21 @@ const pastProjects = [
     image: './images/ShakerAppLogo.svg',
     description:
       'An IoT music education product that helps music students improve their rhythm. <br><br> \
-    A physical shaker device connects to a mobile app over bluetooth. The app will then display a rhythm for the musician to play. \
+    A physical shaker device connects to a mobile app over bluetooth. Next, the app will display a rhythm for the musician to play. \
     The musician will then receive feedback on which notes they played early, late, or even missed. <br><br> \
     This product was submitted to BruinLabs, an entrepreneurship program at UCLA, where my team and I earned honorable mention. <br><br> \
     Find out more about the product <a href="https://pitchdeck.figmatic.com/slides/ksbc38di07561?token=TkkrbjhZW2tvbUdWcGs%3D" target="_blank">here</a> <br> \
     Take a look at the code on our <a href="https://github.com/TrevorGuo/Budgie" target="_blank">GitHub</a>',
+  },
+  {
+    name: 'WorkTogether',
+    image: '',
+    description:
+      "A full stack React social media web application that helps users more easily reach their goals by having them hold each other accountable. <br><br> \
+    Users will join small groups with friends that will all be pursuing similar goals. They'll share their progress with one another, and if someone is falling behind \
+    everyone will make sure they follow through. This is especially helpful for people that can't be physically together to hold each other accountable. <br><br> \
+    I had no prior experience in web development, so this project really pushed me to learn and understand front and back end web development. \
+    This was the final project for my software construction class. Take a look at the code on the <a href='https://github.com/TrevorGuo/WorkTogether' target='_blank'>GitHub</a>",
   },
 ];
 
@@ -86,7 +96,6 @@ function setHobbies() {
 function previousCard() {
   index = Math.abs((index - 1) % currentArray.length);
   setCard();
-  console.log(index);
 }
 
 function nextCard() {
