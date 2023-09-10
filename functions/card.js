@@ -15,22 +15,37 @@ const currentProjects = [
     name: '', //School
     image: './images/ucla.png',
     description:
-      "I'm pretty swamped with school so here are the classes I'm taking this quarter: <br><br>\
-      CS M51A: Logic Design of Digital Systems <br>\
-      Really fun class! Designing things such as digital clocks and vending machines\
-      <br><br>\
-      CS 180: Introduction to Algorithms and Complexity<br>\
-      I really like learning algorithms, so this class is something I look forward\
-      to every week.\
-      <br><br>\
-      Math 115A: Linear Algebra<br>\
-      Proof based linear algebra is very painful.\
-      <br><br>\
-      Physics 1C: Electromagnetism, Optics, and Relativity",
+      "Here are the classes I'm taking in Fall 2023: <br><br> \
+      Parallel and Distributed Computing<br> \
+      Game Theory<br>\
+      Elementary Modern Japanese<br>\
+      Technology and Law<br>\
+      ",
   },
 ];
 
 const pastProjects = [
+  { name: '', //Sofi
+    image: './images/sofi.png',
+    description:
+    "I worked 12 weeks in Summer 2023 at SoFi Technologies Inc. as a Software Engineer Intern. \
+     I was part of the debit card team, and worked to create a script that would automatically perform\
+     end-to-end system validation on the team's PayIn4 service. \
+     For this project, I learned how to develop code in Kotlin with Spring Boot, and I was also able to \
+     leverage my previous experience with DynamoDB.\
+     I also utilized Optimizely for feature flag rollout, and Kibana and DataDog for production data analytics.\
+     "
+  },
+  {
+    name: '', //Amazon
+    image: './images/amazon.png',
+    description:
+      "I worked 14 weeks in Summer 2022 at Amazon as a Software Development Engineer Intern. \
+      I was part of the Amazon Prime team that handles the benefit eligibility of Prime customers. \
+      My project focused on creating Lambda functions to record and query the enrollment history of prime customers. \
+      I had to learn many of the featured AWS products, primarily AWS Lambda, DynamoDB, SNS, API Gateway, and CloudFormation. \
+      "
+  },
   {
     name: 'Budgie',
     image: './images/ShakerAppLogo.svg',
@@ -94,7 +109,7 @@ function setHobbies() {
 }
 
 function previousCard() {
-  index = Math.abs((index - 1) % currentArray.length);
+  index = Math.abs((index + currentArray.length- 1) % currentArray.length);
   setCard();
 }
 
